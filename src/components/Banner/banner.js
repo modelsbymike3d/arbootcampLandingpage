@@ -48,7 +48,11 @@ const Banner = () => {
           >
             We make it easy
           </motion.p>
-          <Button cta="Start Learning" anchor={true} href="linking" />
+          <Button
+            cta="Start Learning"
+            anchor={true}
+            href="https://learn.arbootcamp.com"
+          />
         </div>
       </BackgroundImage>
     </BannerWrapper>

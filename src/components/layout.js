@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Helmet } from "react-helmet"
 import "typeface-gothic-a1"
 import "./reset.css"
 import Navbar from "../components/Navbar/navbar"
@@ -8,6 +9,10 @@ import Footer from "../components/Footer/footer"
 const Layout = ({ children }) => {
   return (
     <LayoutWrapper>
+      <Helmet>
+        <title>AR Bootcamp</title>
+        <link rel="icon" type="image/png" href="favicon.png" sizes="512x512" />
+      </Helmet>
       <Navbar />
       <div className="layout">{children}</div>
       <Footer />

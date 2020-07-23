@@ -8,10 +8,10 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    title: "Startup",
-    author: "Morgan Baker",
-    image: "/yellow-metal-design-decoration.jpg",
-    siteUrl: "https://www.morganbaker.dev",
+    title: "AR Bootcamp",
+    author: "Michael Porter",
+    image: "/favicon.png",
+    siteUrl: "https://arbootcamp.com",
   },
   plugins: [
     {
@@ -24,5 +24,18 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-173415966-1",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+      },
+    },
   ],
 }
