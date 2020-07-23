@@ -7,7 +7,6 @@ import Perk from "../components/Perk/perk"
 import Button from "../components/Button/button"
 import Packages from "../components/Packages/packages"
 import Package from "../components/Package/package"
-import Contact from "../components/Contact/contact"
 import { Link } from "react-scroll"
 
 import perk1Img from "../images/speed.svg"
@@ -21,7 +20,7 @@ export default () => (
   <>
     <Layout>
       <Banner />
-      <TextBlock
+      {/* <TextBlock
         id="about"
         title="Developing a new business is never easy, but Startup is here to help"
         paragraph="With a super-fast Gatsby powered website you have the perfect platform to get your idea off the ground. Its the perfect template to help turn your idea into a reality."
@@ -29,15 +28,13 @@ export default () => (
         <Link to="perks" smooth={true} duration={500}>
           <Button cta="Tell Me More!" />
         </Link>
-      </TextBlock>
+      </TextBlock> */}
       <TextBlockImg
         id="perks"
-        title="We have the tools to help you suceed"
-        subtitle="Startup is perfect for helping to to start and grow your business. As
-          you begin to gain new clients and expand you will see the benefits of
-          a super-fast Gatsby website"
+        title="All backgrounds, all skill levels"
+        subtitle="Developer? Designer? Artist? We've got you covered. Each tutorial walks you through step-by-step, and we go into plenty of depth for those already experienced in augmented reality. And did we mention it's all 100% free?"
       >
-        <div className="flex-container trio-block">
+        {/* <div className="flex-container trio-block">
           <Perk
             img={perk1Img}
             alt="Super fast speed increases"
@@ -56,9 +53,9 @@ export default () => (
             title="Friendly"
             content="Advisors who are available 24/7, all with exprt knowledge"
           />
-        </div>
+        </div> */}
       </TextBlockImg>
-      <Packages
+      {/* <Packages
         title="Our Packages"
         para="Choose the perfect solution for you. With benefits to suit all budgets Startup can offer amazing value and expert advice"
       >
@@ -138,12 +135,7 @@ export default () => (
             </Link>
           </Package>
         </IconContext.Provider>
-      </Packages>
-      <Contact
-        id="contact"
-        title="Contact Startup today and see how we can help your business grow"
-        subtitle="Every second counts when you're looking to get your new business started. Drop Startup a message and one of our representatives will be in contact"
-      />
+      </Packages> */}
     </Layout>
   </>
 )

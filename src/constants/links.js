@@ -1,14 +1,6 @@
 export default [
   {
-    path: "/",
-    text: "about",
-  },
-  {
-    path: "/",
-    text: "packages",
-  },
-  {
-    path: "/",
-    text: "contact",
+    path: "https://learn.arbootcamp.com",
+    text: "Start learning",
   },
 ]

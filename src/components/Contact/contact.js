@@ -29,7 +29,7 @@ const Contact = ({ title, subtitle, id }) => {
               name="message"
               rows="5"
               required
-              autocomplete="off"
+              autoComplete="off"
             />
             <label className="label-name">
               <span className="content-name">Message</span>

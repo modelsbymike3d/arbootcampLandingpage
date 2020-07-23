@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 const Banner = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "flames.jpg" }) {
+      file(relativePath: { eq: "lightBokeh.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 2000, quality: 90) {
             ...GatsbyImageSharpFluid_withWebp
@@ -38,7 +38,7 @@ const Banner = () => {
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1 }}
           >
-            It's time to make your business <span>stand out</span>
+            <span>Learn Augmented Reality</span>
           </motion.h1>
           <motion.p
             initial="hidden"
@@ -46,12 +46,9 @@ const Banner = () => {
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1.5 }}
           >
-            Startup is here to help you achieve your business and personal
-            goals, all through a stylish theme
+            We make it easy
           </motion.p>
-          <Link to="about" smooth={true} duration={500}>
-            <Button cta="Learn More" anchor={true} href="linking" />
-          </Link>
+          <Button cta="Start Learning" anchor={true} href="linking" />
         </div>
       </BackgroundImage>
     </BannerWrapper>
@@ -59,6 +56,15 @@ const Banner = () => {
 }
 
 const BannerWrapper = styled.section`
+  @keyframes animate {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+
   .gatsby-image-wrapper {
     height: 100vh;
     color: #fff;
@@ -81,14 +87,22 @@ const BannerWrapper = styled.section`
       }
 
       h1 {
-        font-size: 1.75rem;
+        font-size: 1.8rem;
         line-height: 1.2;
+        font-weight: 200;
 
         span {
-          background: -webkit-linear-gradient(45deg, #f441a5, #03a9f4);
+          padding: 6px;
+          font-weight: bold;
+          background: -webkit-linear-gradient(45deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+          animation: animate 12s linear infinite;
+          background-size: 400%;
+          filter: drop-shadow(0px 0px 6px #ffffff55);
         }
+
+        
       }
 
       p {

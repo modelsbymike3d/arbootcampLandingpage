@@ -6,7 +6,17 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <div className="credit">
-        Designed & developed by{" "}
+        Site created by{" "}
+        <a
+          href="https://modelsbymike3d.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Mike
+        </a>
+      </div>
+      <div className="credit">
+        Theme by{" "}
         <a
           href="http://www.morganbaker.dev"
           target="_blank"
@@ -15,7 +25,7 @@ const Footer = () => {
           Morgan
         </a>
       </div>
-      {socialIcons.map((item, index) => {
+      {/* {socialIcons.map((item, index) => {
         return (
           <a
             key={index}
@@ -26,7 +36,7 @@ const Footer = () => {
             {item.icon}
           </a>
         )
-      })}
+      })} */}
     </FooterWrapper>
   )
 }
