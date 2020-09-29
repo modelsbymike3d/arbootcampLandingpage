@@ -9,10 +9,6 @@ import Footer from "../components/Footer/footer"
 const Layout = ({ children }) => {
   return (
     <LayoutWrapper>
-      <Helmet>
-        <title>AR Bootcamp</title>
-        <link rel="icon" type="image/png" href="favicon.png" sizes="512x512" />
-      </Helmet>
       <Navbar />
       <div className="layout">{children}</div>
       <Footer />
@@ -105,6 +101,27 @@ const LayoutWrapper = styled.div`
 
   .text-center {
     text-align: center;
+  }
+
+  a {
+    color: white;
+  }
+
+  .iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
   }
 `
 

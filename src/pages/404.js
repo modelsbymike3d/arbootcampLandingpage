@@ -15,9 +15,14 @@ import perk3Img from "../images/friendly-staff.svg"
 
 import { IconContext } from "react-icons"
 import { MdDone, MdClear } from "react-icons/md"
+import { Helmet } from "react-helmet"
 
 export default () => (
   <>
+    <Helmet>
+      <title>AR Bootcamp</title>
+      <link rel="icon" type="image/png" href="favicon.png" sizes="512x512" />
+    </Helmet>
     <Layout>
       <TextBlockImg
         id="404"
