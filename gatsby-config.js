@@ -28,6 +28,7 @@ module.exports = {
         path: `${__dirname}/src/landing`,
       },
     },
+    'gatsby-plugin-sitemap',
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
