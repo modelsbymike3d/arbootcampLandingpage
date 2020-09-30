@@ -39,6 +39,7 @@ export default () => (
       <meta property="og:site_name" content={title} />
       <link rel="canonical" href={canonicalUrl} />
       <meta property="og:url" content={canonicalUrl} />
+      <meta property="twitter:card" content="summary_large_image" />
       <link rel="icon" type="image/png" href="/favicon.png" sizes="512x512" />
     </Helmet>
     <Layout>
