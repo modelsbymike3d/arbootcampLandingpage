@@ -82,6 +82,11 @@ const LayoutWrapper = styled.div`
     }
   }
 
+  .vertical-spacing {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
   .flex-container {
     display: flex;
 

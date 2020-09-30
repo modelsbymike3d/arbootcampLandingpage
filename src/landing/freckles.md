@@ -2,6 +2,7 @@
 title: Make freckles in Lens Studio
 description: Want to add freckles to your Snapchat lenses/filters? Fortunately there are several different ways you can do this using Lens Studio.
 path: /landing/freckles
+image: /landing/freckles.jpg
 ---
 
 # Freckles

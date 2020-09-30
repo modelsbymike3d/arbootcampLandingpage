@@ -17,11 +17,29 @@ import { IconContext } from "react-icons"
 import { MdDone, MdClear } from "react-icons/md"
 import { Helmet } from "react-helmet"
 
+const title = `AR Bootcamp`
+const description = `The best way to learn augmented reality!`
+const imageUrl = `https://arbootcamp.com/mainImage.jpg`
+const canonicalUrl = `https://arbootcamp.com`
+
 export default () => (
   <>
     <Helmet>
-      <title>AR Bootcamp</title>
-      <link rel="icon" type="image/png" href="favicon.png" sizes="512x512" />
+      <title>{title}</title>
+      <meta name="title" content={title} />
+      <meta property="og:title" content={title} />
+      <meta property="twitter:title" content={title} />
+      <meta name="description" content={description} />
+      <meta property="og:description" content={description} />
+      <meta property="twitter:description" content={description} />
+      <meta property="og:image" content={imageUrl} />
+      <meta property="twitter:image" content={imageUrl} />
+      <meta property="og:image:alt" content={title} />
+      <meta property="twitter:image:alt" content={title} />
+      <meta property="og:site_name" content={title} />
+      <link rel="canonical" href={canonicalUrl} />
+      <meta property="og:url" content={canonicalUrl} />
+      <link rel="icon" type="image/png" href="/favicon.png" sizes="512x512" />
     </Helmet>
     <Layout>
       <Banner />
