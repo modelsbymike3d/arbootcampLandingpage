@@ -50,7 +50,7 @@ const LandingPage = ({ data }) => {
           className="content-container"
           dangerouslySetInnerHTML={{ __html: html }}
         ></div>
-        <LandingCTA />
+        <LandingCTA platform={frontmatter.platform} />
       </Layout>
     </>
   )
@@ -72,6 +72,7 @@ export const pageQuery = graphql`
         title
         description
         image
+        platform
       }
     }
   }
