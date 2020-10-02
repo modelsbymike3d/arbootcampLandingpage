@@ -10,7 +10,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(`
     query {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { glob: "**/src/landing/*.md" } }
+        filter: { fileAbsolutePath: { glob: "**/src/landing/**/*.md" } }
       ) {
         edges {
           node {

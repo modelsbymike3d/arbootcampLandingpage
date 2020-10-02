@@ -1,7 +1,7 @@
 ---
 title: Make a Kira Kira/Bling effect in Lens Studio
 description: It goes by many names - Kira Kira, bling, glitter, sparkle - and it took Snapchat by storm. But how do you make this effect? Let's find out!
-path: /landing/kira-kira
+path: /lens-studio/kira-kira
 image: /landing/freckles.jpg
 platform: Snapchat
 ---
