@@ -88,15 +88,19 @@ export default ({ data }) => {
           />
 
           <div className="vertical-spacing">
-            {Object.entries(tutList).map((entry, index) => {
-              return (
-                <TutorialSection
-                  key={index}
-                  platform={entry[0]}
-                  data={entry[1]}
-                />
-              )
-            })}
+            {Object.entries(tutList)
+              .sort((a, b) => {
+                return a[0].localeCompare(b[0])
+              })
+              .map((entry, index) => {
+                return (
+                  <TutorialSection
+                    key={index}
+                    platform={entry[0]}
+                    data={entry[1]}
+                  />
+                )
+              })}
           </div>
         </TextBlock>
 

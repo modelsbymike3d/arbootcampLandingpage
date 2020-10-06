@@ -8,9 +8,13 @@ const TutorialSection = ({ platform, data }) => {
         {platform}
         {data.software ? ` - ${data.software}` : null}
       </h2>
-      {data.tutorials.map((entry, index) => {
-        return <TutorialLink key={index} {...entry} />
-      })}
+      {data.tutorials
+        .sort((a, b) => {
+          return a.title.localeCompare(b.title)
+        })
+        .map((entry, index) => {
+          return <TutorialLink key={index} {...entry} />
+        })}
     </div>
   )
 }
