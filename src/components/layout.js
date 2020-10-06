@@ -80,6 +80,10 @@ const LayoutWrapper = styled.div`
     @media (min-width: 1080px) {
       max-width: 650px;
     }
+
+    p {
+      text-align: left;
+    }
   }
 
   .vertical-spacing {

@@ -26,7 +26,7 @@ const TextBlock = ({ title, paragraph, children, id }) => {
             visible: { opacity: 1, y: 0 },
             hidden: { opacity: 0, y: 25 },
           }}
-          transition={{ ease: "easeOut", duration: 1.25, delay: 0.35 }}
+          transition={{ ease: "easeOut", duration: 1.0, delay: 0.0 }}
         >
           <h2>{title}</h2>
           <p>{paragraph}</p>
@@ -38,6 +38,15 @@ const TextBlock = ({ title, paragraph, children, id }) => {
 }
 
 const TextBlockWrapper = styled.section`
+  @keyframes animate {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+
   background: linear-gradient(45deg, #060c21, #0d0139);
   color: #fff;
   text-align: left;
@@ -49,10 +58,19 @@ const TextBlockWrapper = styled.section`
   }
 
   h2 {
-    color: #ee00b3;
-    background: -webkit-linear-gradient(45deg, #f441a5, #03a9f4);
+    margin-top: 60px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(
+      45deg,
+      #03a9f4,
+      #f441a5,
+      #ffeb3b,
+      #03a9f4
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: animate 24s linear infinite;
+    background-size: 400%;
   }
 
   p {

@@ -52,6 +52,7 @@ const Banner = () => {
             cta="Start Learning"
             anchor={true}
             href="https://learn.arbootcamp.com"
+            external={true}
           />
         </div>
       </BackgroundImage>

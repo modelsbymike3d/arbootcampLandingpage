@@ -1,6 +1,10 @@
 export default [
   {
     path: "https://learn.arbootcamp.com",
-    text: "Start learning",
+    text: "Bootcamp",
+  },
+  {
+    path: "/tutorials",
+    text: "Tutorials",
   },
 ]

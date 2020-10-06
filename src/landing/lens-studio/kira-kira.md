@@ -4,9 +4,8 @@ description: It goes by many names - Kira Kira, bling, glitter, sparkle - and it
 path: /lens-studio/kira-kira
 image: /landing/kirakira-lensstudio.jpg
 platform: Snapchat
+software: Lens Studio
 ---
-
-# Kira Kira \* Bling \* Glitter \* Sparkles
 
 Adding the bling effect is not quite as simple as just clicking a few buttons, but it also isn't too hard to do.
 

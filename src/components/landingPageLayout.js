@@ -8,7 +8,7 @@ import Navbar from "./Navbar/navbar"
 import Footer from "./Footer/footer"
 import Layout from "./layout"
 import Banner from "../components/Banner/banner"
-import TextBlockImg from "../components/TextBlockImg/textBlockImg"
+import TextBlock from "../components/TextBlock/textBlock"
 import LandingCTA from "./LandingCTA"
 
 const LandingPage = ({ data }) => {
@@ -45,12 +45,13 @@ const LandingPage = ({ data }) => {
         <link rel="icon" type="image/png" href="/favicon.png" sizes="512x512" />
       </Helmet>
       <Layout>
-        <TextBlockImg title={frontmatter.title} />
-        <div
-          className="content-container"
-          dangerouslySetInnerHTML={{ __html: html }}
-        ></div>
-        <LandingCTA platform={frontmatter.platform} />
+        <TextBlock title={frontmatter.title}>
+          <div
+            className="content-container"
+            dangerouslySetInnerHTML={{ __html: html }}
+          ></div>
+          <LandingCTA platform={frontmatter.platform} />
+        </TextBlock>
       </Layout>
     </>
   )

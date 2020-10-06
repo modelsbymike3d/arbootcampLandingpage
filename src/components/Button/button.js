@@ -1,15 +1,18 @@
 import React from "react"
 import styled from "styled-components"
+import { GoLinkExternal } from "react-icons/go"
 
 const Button = props => {
   return (
     <>
       {props.anchor ? (
         <ButtonWrapper className="anchor" as="a" href={props.href}>
-          {props.cta}
+          {props.cta} {props.external ? <GoLinkExternal /> : null}
         </ButtonWrapper>
       ) : (
-        <ButtonWrapper type={props.type}>{props.cta}</ButtonWrapper>
+        <ButtonWrapper type={props.type}>
+          {props.cta} {props.external ? <GoLinkExternal /> : null}
+        </ButtonWrapper>
       )}
     </>
   )
