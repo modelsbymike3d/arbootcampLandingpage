@@ -62,6 +62,10 @@ const LayoutWrapper = styled.div`
     padding: 10px 0px;
   }
 
+  .nav-li {
+    text-align: center;
+  }
+
   p {
     font-size: 1rem;
     line-height: 1.45;

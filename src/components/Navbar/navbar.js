@@ -36,7 +36,7 @@ const Navbar = () => {
       >
         {links.map((item, index) => {
           return (
-            <li key={index}>
+            <li className="nav-li" key={index}>
               <a href={item.path}>{item.text}</a>
             </li>
           )
