@@ -7,7 +7,7 @@ const TextBlock = ({ title, paragraph, children, id }) => {
   const controls = useAnimation()
   const [ref, inView] = useInView({
     // Percentage of item in view to trigger animation
-    threshold: 0.25,
+    threshold: 0.0,
   })
 
   useEffect(() => {
