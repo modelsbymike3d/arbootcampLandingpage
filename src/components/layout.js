@@ -108,6 +108,10 @@ const LayoutWrapper = styled.div`
     padding: 100px 30px;
   }
 
+  .header-padding {
+    padding: 30px 10px;
+  }
+
   .text-center {
     text-align: center;
   }

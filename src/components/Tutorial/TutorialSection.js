@@ -4,7 +4,7 @@ import TutorialLink from "./TutorialLink"
 const TutorialSection = ({ platform, data }) => {
   return (
     <div className="content-container vertical-spacing">
-      <h2>
+      <h2 className="header-padding">
         {platform} - {data.software}
       </h2>
       {data.tutorials.map((entry, index) => {
