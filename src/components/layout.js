@@ -57,6 +57,11 @@ const LayoutWrapper = styled.div`
     font-size: 1.5rem;
   }
 
+  li {
+    text-align: left;
+    padding: 10px 0px;
+  }
+
   p {
     font-size: 1rem;
     line-height: 1.45;
@@ -75,7 +80,7 @@ const LayoutWrapper = styled.div`
   .content-container {
     margin: 0 auto;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
 
     @media (min-width: 1080px) {
       max-width: 650px;
@@ -84,6 +89,10 @@ const LayoutWrapper = styled.div`
     p {
       text-align: left;
     }
+  }
+
+  .italic {
+    font-style: italic;
   }
 
   .vertical-spacing {
@@ -109,7 +118,7 @@ const LayoutWrapper = styled.div`
   }
 
   .header-padding {
-    padding: 30px 10px;
+    padding-top: 30px;
   }
 
   .text-center {

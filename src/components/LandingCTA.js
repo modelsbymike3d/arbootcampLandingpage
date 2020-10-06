@@ -2,9 +2,11 @@ import React from "react"
 
 const LayoutCTA = ({ platform }) => {
   return (
-    <div className="content-container vertical-spacing">
+    <div className="content-container vertical-spacing italic">
       <p>
-        {`Do you want to learn how to make awesome ${platform} lenses? AR Bootcamp
+        {`Do you want to learn how to make awesome ${
+          platform === "General" ? "AR" : platform
+        } filters? AR Bootcamp
         has you covered!`}
       </p>
       <p>
