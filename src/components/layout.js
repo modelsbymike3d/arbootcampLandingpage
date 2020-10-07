@@ -122,7 +122,8 @@ const LayoutWrapper = styled.div`
   }
 
   .header-padding {
-    padding-top: 30px;
+    margin-top: 30px;
+    margin-bottom: 5px;
   }
 
   .text-center {
