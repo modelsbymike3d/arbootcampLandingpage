@@ -10,6 +10,8 @@ import Layout from "./layout"
 import Banner from "../components/Banner/banner"
 import TextBlock from "../components/TextBlock/textBlock"
 import LandingCTA from "./LandingCTA"
+import Related from "../components/Tutorial/Related"
+const relatedData = require("../landing/related.json")
 
 const LandingPage = ({ data }) => {
   const { markdownRemark, site } = data // data.markdownRemark holds your post data
@@ -50,6 +52,9 @@ const LandingPage = ({ data }) => {
             className="content-container"
             dangerouslySetInnerHTML={{ __html: html }}
           ></div>
+          {relatedData[frontmatter.path] ? (
+            <Related related={relatedData[frontmatter.path]} />
+          ) : null}
           <LandingCTA platform={frontmatter.platform} />
         </TextBlock>
       </Layout>
