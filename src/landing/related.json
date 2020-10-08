@@ -1,5 +1,11 @@
 {
   "/general/getting-started-3d": [],
+  "/general/finding-grain": [
+    {
+      "title": "Grain in Lens Studio",
+      "path": "/lens-studio/grain"
+    }
+  ],
   "/lens-studio/freckles": [
     {
       "title": "Grain in Lens Studio",
@@ -21,6 +27,10 @@
     }
   ],
   "/lens-studio/grain": [
+    {
+      "title": "Finding grain textures",
+      "path": "/general/finding-grain"
+    },
     {
       "title": "Kira Kira/Bling effect in Lens Studio",
       "path": "/lens-studio/kira-kira"
