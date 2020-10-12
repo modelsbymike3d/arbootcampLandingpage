@@ -11,13 +11,17 @@ The most popular way of making grain in Lens Studio is probably by overlaying an
 
 ## Using an image overlay
 
-Adding an image overlay is a pretty straightforward way of adding grain to your lenses. Natalie's tutorial goes through all the steps of finding and adding a grain image, but I do want to interject and say that when you are searching for a grain image on Google, be sure you [filter by usage rights](https://support.google.com/websearch/answer/29508?co=GENIE.Platform%3DDesktop&hl=en&oco=0) to make sure you aren't violating any copyright. Google Images is a search engine after all, not a direct source of images.
+Adding an image overlay is a pretty straightforward way of adding grain to your lenses. The hardest part might be finding grain images, but fortunately resources like [Film Composite](https://www.filmcomposite.com/free-film-assets) exist with some free images of film grain. Watch the video below or [read the tutorial here](https://learn.arbootcamp.com/snapchat-beginner/grain).
+
+<div class="iframe-container">
+<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/q3PtpCixl5k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+Natalie's tutorial also goes through all the steps of finding and adding a grain image, but I do want to interject and say that when you are searching for a grain image on Google, be sure you [filter by usage rights](https://support.google.com/websearch/answer/29508?co=GENIE.Platform%3DDesktop&hl=en&oco=0) to make sure you aren't violating any copyright. Google Images is a search engine after all, not a direct source of images.
 
 <div class="iframe-container">
 <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/TABYa8KUDQU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-## Using a GIF or video
 
 If you don't want static grain, you can follow the same steps as for using an image overlay, but just swap out the image for a GIF, a video, or an image sequence of the grain.
 
