@@ -57,9 +57,14 @@ const LayoutWrapper = styled.div`
     font-size: 1.5rem;
   }
 
+  h4 {
+    text-align: left;
+  }
+
   li {
     text-align: left;
     padding: 10px 0px;
+    line-height: 1.45;
   }
 
   .nav-li {
