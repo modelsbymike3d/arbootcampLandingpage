@@ -24,12 +24,20 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `filter-pages`,
+        path: `${__dirname}/src/filters`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `landing-pages`,
         path: `${__dirname}/src/landing`,
       },
     },
-    'gatsby-plugin-sitemap',
+    "gatsby-plugin-sitemap",
     `gatsby-transformer-remark`,
+    `gatsby-transformer-json`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,

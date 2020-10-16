@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import links from "../../constants/links"
 import styled from "styled-components"
 import Logo from "../../images/logo.svg"
-import { Link, animateScroll as scroll } from "react-scroll"
+import { Link } from "gatsby"
 
 const Navbar = () => {
   const [isOpen, setNav] = useState(false)
@@ -37,7 +37,7 @@ const Navbar = () => {
         {links.map((item, index) => {
           return (
             <li className="nav-li" key={index}>
-              <a href={item.path}>{item.text}</a>
+              <Link to={item.path}>{item.text}</Link>
             </li>
           )
         })}

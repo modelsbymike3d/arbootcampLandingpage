@@ -28,7 +28,7 @@ const TextBlock = ({ title, paragraph, children, id }) => {
           }}
           transition={{ ease: "easeOut", duration: 1.0, delay: 0.0 }}
         >
-          <h2>{title}</h2>
+          <h1>{title}</h1>
           <p>{paragraph}</p>
           {children}
         </motion.div>
@@ -57,6 +57,11 @@ const TextBlockWrapper = styled.section`
     text-align: center;
   }
 
+  h1 {
+    font-size: 3rem;
+  }
+
+  h1,
   h2 {
     margin-top: 60px;
     font-weight: bold;

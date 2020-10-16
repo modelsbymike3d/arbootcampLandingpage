@@ -18,27 +18,15 @@ import perk3Img from "../images/friendly-staff.svg"
 import { IconContext, GoLinkExternal } from "react-icons"
 import { MdDone, MdClear } from "react-icons/md"
 import { Helmet } from "react-helmet"
+import FilterLink from "../components/Filters/FilterLink"
 
-const title = `AR Bootcamp | Tutorials`
-const description = `Looking for Lens Studio or Spark AR tutorials? Look no further.`
+const title = `AR Bootcamp | Filters`
+const description = `Looking for cool filters? Need some inspiration? Check out some of our favorites!`
 const imageUrl = `https://arbootcamp.com/mainImage.jpg`
-const canonicalUrl = `https://arbootcamp.com/tutorials`
+const canonicalUrl = `https://arbootcamp.com/filters`
 
 export default ({ data }) => {
-  const pages = data.allMarkdownRemark.edges
-  const tutList = {}
-  pages.forEach(page => {
-    const platform = page.node.frontmatter.platform
-    if (!tutList[platform]) {
-      tutList[platform] = {}
-      tutList[platform].software = page.node.frontmatter.software
-      tutList[platform].tutorials = []
-    }
-    tutList[platform].tutorials.push({
-      ...page.node.frontmatter,
-      excerpt: page.node.excerpt,
-    })
-  })
+  const filterList = data.allFiltersJson.edges
   return (
     <>
       <Helmet>
@@ -70,20 +58,23 @@ export default ({ data }) => {
           <Button cta="Tell Me More!" />
         </Link>
       </TextBlock> */}
-        <TextBlock id="perks" title="Let's get started!">
+        <TextBlock id="perks" title="Filters!">
           <p>
             {`
-                Making augmented reality filters is a ton of fun, but it can be daunting when you are starting out or trying something new. I've been there, so that's why I created AR Bootcamp to help you succeed! You can head on over to our learning pages to get started with tutorials for Lens Studio and Spark AR, or you can scroll down to view various tutorials we've compiled from across the web.
+                There are so many augmented reality filters out there that it can be overwhelming. Never fear, we are here with our favorite picks.
               `}
           </p>
-          <Button
-            cta="Start Learning"
-            anchor={true}
-            href="https://learn.arbootcamp.com"
-            external={true}
-          />
 
-          <div className="vertical-spacing">
+          {filterList.map((entry, index) => {
+            const payload = entry.node
+            return (
+              <div>
+                <FilterLink key={index} {...payload} />
+              </div>
+            )
+          })}
+
+          {/* <div className="vertical-spacing">
             {Object.entries(tutList)
               .sort((a, b) => {
                 return a[0].localeCompare(b[0])
@@ -97,7 +88,7 @@ export default ({ data }) => {
                   />
                 )
               })}
-          </div>
+          </div> */}
         </TextBlock>
 
         {/* <Packages
@@ -188,20 +179,15 @@ export default ({ data }) => {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(
-      filter: { fileAbsolutePath: { glob: "**/src/landing/**/*.md" } }
-    ) {
+    allFiltersJson(sort: { fields: date }) {
       edges {
         node {
-          excerpt(pruneLength: 280)
-          frontmatter {
-            path
-            title
-            description
-            image
-            platform
-            software
-          }
+          description
+          image
+          title
+          platform
+          path
+          date
         }
       }
     }

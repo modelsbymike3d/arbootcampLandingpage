@@ -7,4 +7,8 @@ export default [
     path: "/tutorials",
     text: "Tutorials",
   },
+  {
+    path: "/filters",
+    text: "Filters",
+  },
 ]
