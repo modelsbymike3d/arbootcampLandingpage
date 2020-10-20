@@ -179,7 +179,7 @@ export default ({ data }) => {
 
 export const pageQuery = graphql`
   query {
-    allFiltersJson(sort: { fields: date }) {
+    allFiltersJson(sort: { fields: date, order: DESC }) {
       edges {
         node {
           description

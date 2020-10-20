@@ -12,6 +12,8 @@ import TextBlock from "./TextBlock/textBlock"
 import FilterBlock from "./Filters/FilterBlock"
 import LandingCTA from "./LandingCTA"
 import Related from "./Tutorial/Related"
+import AuthorSection from "./Author/AuthorSection"
+
 const relatedData = require("../landing/related.json")
 
 const LandingPage = ({ data }) => {
@@ -22,6 +24,16 @@ const LandingPage = ({ data }) => {
   const imageUrl = pageData.image
     ? site.siteMetadata.siteUrl + pageData.image
     : site.siteMetadata.siteUrl + "/mainImage.jpg"
+
+  const authorInfo = {
+    author: pageData.contributor,
+    site: pageData.contributor_site,
+    snapchat: pageData.contributor_snapchat,
+    instagram: pageData.contributor_instagram,
+    twitter: pageData.contributor_twitter,
+    youtube: pageData.contributor_youtube,
+    facebook: pageData.contributor_facebook,
+  }
 
   return (
     <>
@@ -47,8 +59,9 @@ const LandingPage = ({ data }) => {
       </Helmet>
       <Layout>
         <TextBlock title={pageData.title}>
+          <AuthorSection {...authorInfo} />
           <div
-            className="content-container"
+            className="content-container text-left"
             dangerouslySetInnerHTML={{ __html: pageData.intro }}
           ></div>
 
@@ -78,6 +91,13 @@ export const pageQuery = graphql`
     allFiltersJson(filter: { path: { eq: $path } }) {
       edges {
         node {
+          contributor
+          contributor_site
+          contributor_snapchat
+          contributor_instagram
+          contributor_twitter
+          contributor_youtube
+          contributor_facebook
           description
           intro
           image

@@ -7,9 +7,7 @@ const LayoutCTA = ({ platform }) => {
         {`Do you want to learn how to make awesome ${
           platform === "General" ? "AR" : platform
         } filters? AR Bootcamp
-        has you covered!`}
-      </p>
-      <p>
+        has you covered! `}
         Head on over to <a href="https://learn.arbootcamp.com">our tutorials</a>{" "}
         to get started today!
       </p>

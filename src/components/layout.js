@@ -135,6 +135,10 @@ const LayoutWrapper = styled.div`
     text-align: center;
   }
 
+  .text-left {
+    text-align: left;
+  }
+
   a {
     color: white;
   }
