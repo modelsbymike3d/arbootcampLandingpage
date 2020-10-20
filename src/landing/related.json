@@ -39,5 +39,17 @@
       "title": "Freckles in Lens Studio",
       "path": "/lens-studio/freckles"
     }
+  ],
+  "/filters/2020-halloween-instagram": [
+    {
+      "title": "10 Incredible Snapchat Filters for Halloween 2020",
+      "path": "/filters/2020-halloween-snapchat"
+    }
+  ],
+  "/filters/2020-halloween-snapchat": [
+    {
+      "title": "10 Delightful Instagram Filters for Halloween 2020",
+      "path": "/filters/2020-halloween-instagram"
+    }
   ]
 }

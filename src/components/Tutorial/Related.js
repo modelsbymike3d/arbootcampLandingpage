@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Related = ({ related }) => {
   if (!related || related.length === 0) {
@@ -11,7 +12,7 @@ const Related = ({ related }) => {
         {related.map((entry, index) => {
           return (
             <li key={index}>
-              <a href={entry.path}>{entry.title}</a>
+              <Link to={entry.path}>{entry.title}</Link>
             </li>
           )
         })}
