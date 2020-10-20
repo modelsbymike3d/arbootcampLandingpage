@@ -49,7 +49,7 @@ const LandingPage = ({ data }) => {
         <meta property="twitter:image" content={imageUrl} />
         <meta property="og:image:alt" content={pageData.title} />
         <meta property="twitter:image:alt" content={pageData.title} />
-        <meta property="twitter:card" content={`summary_large_image`} />
+        <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="og:site_name"
           content={`AR Bootcamp | ${pageData.title}`}
