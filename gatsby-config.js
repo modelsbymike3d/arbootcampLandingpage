@@ -38,7 +38,12 @@ module.exports = {
     "gatsby-plugin-sitemap",
     `gatsby-transformer-remark`,
     `gatsby-transformer-json`,
-    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        displayName: false
+      }
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
