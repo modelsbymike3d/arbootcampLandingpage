@@ -20,7 +20,6 @@ const AuthorSection = ({
   youtube,
   facebook,
 }) => {
-  console.log(author)
   return (
     <LayoutWrapper>
       <div>

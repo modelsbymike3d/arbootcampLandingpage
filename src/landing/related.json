@@ -40,6 +40,18 @@
       "path": "/lens-studio/freckles"
     }
   ],
+  "/lens-studio/helpful-resources": [
+    {
+      "title": "Helpful resources for Spark AR Studio",
+      "path": "/sparkar/helpful-resources"
+    }
+  ],
+  "/sparkar/helpful-resources": [
+    {
+      "title": "Helpful resources for Lens Studio",
+      "path": "/lens-studio/helpful-resources"
+    }
+  ],
   "/filters/2020-halloween-instagram": [
     {
       "title": "10 Incredible Snapchat Filters for Halloween 2020",
