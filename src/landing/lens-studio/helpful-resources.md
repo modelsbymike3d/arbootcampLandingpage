@@ -7,7 +7,7 @@ platform: Snapchat
 software: Lens Studio
 ---
 
-You don't have to reinvent the wheel. While it's great to learn how to do everything yourself, sometimes you have time or knowledge constraints. Here's a list of helpful resources created by the Lens Studio community that can help you quickly create awesome lenses. Snapchat themselves have [created a ton of useful templates](https://lensstudio.snapchat.com/templates/), but here we are focusing on outside resources. Use them, learn from them, and make something awesome!
+You don't have to reinvent the wheel. While it's great to learn how to do everything yourself, sometimes you have time or knowledge constraints. Here's a list of helpful resources created by the Lens Studio community that can help you quickly create awesome lenses. Snapchat themselves have [created a ton of useful templates](https://lensstudio.snapchat.com/templates/), but here we are focusing on outside resources. Use them, learn from them, and make something awesome! Read on to learn where to find Lens Studio scripts, templates, and more!
 
 ## The OLC Github repo
 

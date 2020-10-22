@@ -7,7 +7,7 @@ platform: Instagram
 software: Spark AR
 ---
 
-Not sure how to script that feature you need? Getting lost in the patch editor? You aren't alone. Making augmented reality filters can be difficult, but there are lots of helpful resources out there that can make it a little easier. Here we are taking a look at some helpful resources you can use and learn from for your next Spark AR project. Spark AR of course [has their own tutorials](https://sparkar.facebook.com/ar-studio/learn/tutorials/#connecting-multiple-sequences), but here we are looking at outside resources created by the community.
+Not sure how to script that feature you need? Getting lost in the patch editor? You aren't alone. Making augmented reality filters can be difficult, but there are lots of helpful resources out there that can make it a little easier. Here we are taking a look at some helpful resources you can use and learn from for your next Spark AR project. Spark AR of course [has their own tutorials](https://sparkar.facebook.com/ar-studio/learn/tutorials/#connecting-multiple-sequences), but here we are looking at outside resources created by the community. Read on to learn where to find Spark AR patches, scripts, and more!
 
 ## The Spark AR Community Github repo
 
