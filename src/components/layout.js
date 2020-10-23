@@ -100,6 +100,10 @@ const LayoutWrapper = styled.div`
     }
   }
 
+  blockquote {
+    font-style: italic;
+  }
+
   .italic {
     font-style: italic;
   }
@@ -148,6 +152,7 @@ const LayoutWrapper = styled.div`
     overflow: hidden;
     width: 100%;
     padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    margin-bottom: 50px;
   }
 
   .responsive-iframe {
