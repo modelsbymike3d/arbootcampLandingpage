@@ -1,6 +1,6 @@
 ---
 title: Color effects with LUTs in Spark AR Studio
-description: Instagram lets you add filters when you post, but what about for AR effects? Learn how to create your own color effects using Spark AR!
+description: Instagram lets you add filters when you post, but what about for AR effects? Learn how to create your own color effects using LUTs in Spark AR!
 path: /sparkar/color-effects
 image: /landing/sparkar-lut.jpg
 platform: Instagram

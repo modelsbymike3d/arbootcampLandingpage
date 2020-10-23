@@ -21,7 +21,7 @@ The easiest way to add a color correction is to use one of [Lens Studio's built-
 
 ## Making your own LUT
 
-If you are wanting to create your own color effect, Lens Studio provides a base LUT on their [post effect page](https://lensstudio.snapchat.com/guides/2d/post-effect/) that you can download and use. They do provide some brief instructions on how to do that, but for a deeper look at how this is done, check out the following videos.
+If you are wanting to create your own color correction, Lens Studio provides a base LUT on their [post effect page](https://lensstudio.snapchat.com/guides/2d/post-effect/) that you can download and use. They do provide some brief instructions on how to do that, but for a deeper look at how this is done, check out the following videos.
 
 Creating your own LUT can be as simple as applying a VSCO filter. Once again we have Emily here to walk us through the process.
 
