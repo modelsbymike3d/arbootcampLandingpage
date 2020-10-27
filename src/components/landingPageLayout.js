@@ -49,6 +49,7 @@ const LandingPage = ({ data }) => {
       </Helmet>
       <Layout>
         <TextBlock title={frontmatter.title}>
+          {frontmatter.image ? <img className="content-container" src={frontmatter.image} alt={frontmatter.title} /> : null}
           <div
             className="content-container"
             dangerouslySetInnerHTML={{ __html: html }}
