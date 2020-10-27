@@ -1,5 +1,16 @@
 {
-  "/general/getting-started-3d": [],
+  "/general/getting-started-3d": [
+    {
+      "title": "What software do I need for creating augmented reality?",
+      "path": "/general/augmented-reality-software"
+    }
+  ],
+  "/general/augmented-reality-software": [
+    {
+      "title": "Getting started in 3D for AR",
+      "path": "/general/getting-started-3d"
+    }
+  ],
   "/general/finding-grain": [
     {
       "title": "Grain in Lens Studio",
