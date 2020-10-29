@@ -17,6 +17,12 @@
       "path": "/lens-studio/grain"
     }
   ],
+  "/lens-studio/snapml-intro": [
+    {
+      "title": "Helpful resources for Lens Studio",
+      "path": "/lens-studio/helpful-resources"
+    }
+  ],
   "/lens-studio/freckles": [
     {
       "title": "Grain in Lens Studio",
@@ -71,6 +77,10 @@
     {
       "title": "Getting started in 3D for AR",
       "path": "/general/getting-started-3d"
+    },
+    {
+      "title": "Getting started with SnapML",
+      "path": "/lens-studio/snapml-intro"
     }
   ],
   "/lens-studio/color-effects": [
