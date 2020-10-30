@@ -7,13 +7,13 @@ contributor_twitter: https://www.twitter.com/jonahcreate/
 contributor_youtube: ""
 contributor_facebook: ""
 title: Interview With Julien Van Dorland
-description: Julien Van Dorland is a digital creator and entrepreneur who specializes in social augmented reality. He is an official lens creator at Snapchat, which allows him to work with some of the world's biggest and most influential brands. Outside of his work with snapchat, Julien has created multiple business ventures in the digital and fashion marketplace.
+description: Julien Van Dorland is a digital creator and entrepreneur who specializes in social augmented reality. He is an Official Lens Creator at Snapchat, which allows him to work with some of the world's biggest and most influential brands. Outside of his work with snapchat, Julien has created multiple business ventures in the digital and fashion marketplace.
 path: /blog/interview-with-julien-van-dorland
 image: /blog/interview-with-julien-van-dorland.jpg
 date: "2020-10-30"
 ---
 
-Julien Van Dorland is a digital creator and entrepreneur who specializes in social augmented reality. He is an official lens creator at Snapchat, which allows him to work with some of the world's biggest and most influential brands. Outside of his work with snapchat, Julien has created multiple business ventures in the digital and fashion marketplace.
+Julien Van Dorland is a digital creator and entrepreneur who specializes in social augmented reality. He is an Official Lens Creator at Snapchat, which allows him to work with some of the world's biggest and most influential brands. Outside of his work with snapchat, Julien has created multiple business ventures in the digital and fashion marketplace.
 
 **_Jonah_**: Hello, Julien. Hello. If you could just give us a quick introduction of who you are.
 

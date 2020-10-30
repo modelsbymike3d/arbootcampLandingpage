@@ -52,11 +52,6 @@ export default ({ data }) => {
       </Helmet>
       <Layout>
         <TextBlock id="blog-list" title="Blog">
-          <p>
-            {`
-                Making augmented reality filters is a ton of fun, but it can be daunting when you are starting out or trying something new. I've been there, so that's why I created AR Bootcamp to help you succeed! You can head on over to our learning pages to get started with tutorials for Lens Studio and Spark AR, or you can scroll down to view various tutorials we've compiled from across the web.
-              `}
-          </p>
 
           <div className="vertical-spacing">
               {pages.map((page, index) => {
