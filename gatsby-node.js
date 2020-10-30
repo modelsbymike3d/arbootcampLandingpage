@@ -6,9 +6,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const landingPageTemplate = path.resolve(
     `src/components/landingPageLayout.js`
   )
-  const blogPageTemplate = path.resolve(
-    `src/components/blogLayout.js`
-  )
+  const blogPageTemplate = path.resolve(`src/components/blogLayout.js`)
   const filtersPageTemplate = path.resolve(
     "src/components/filtersPageLayout.js"
   )
@@ -62,7 +60,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   // Handle errors
   if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query for landing pages.`)
+    reporter.panicOnBuild(
+      `Error while running GraphQL query for landing pages.`
+    )
     return
   }
 
@@ -72,7 +72,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   if (filtersList.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query for filters pages.`)
+    reporter.panicOnBuild(
+      `Error while running GraphQL query for filters pages.`
+    )
     return
   }
 
@@ -92,11 +94,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 
-  filtersList.data.allFiltersJson.edges.forEach(({node }) => {
+  filtersList.data.allFiltersJson.edges.forEach(({ node }) => {
     createPage({
       path: node.path,
       component: filtersPageTemplate,
-      context: {}
+      context: {},
     })
   })
 }

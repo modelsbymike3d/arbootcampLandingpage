@@ -9,6 +9,7 @@ import {
   Twitter,
   Youtube,
   FacebookF,
+  Linkedin,
 } from "@styled-icons/fa-brands"
 
 const AuthorSection = ({
@@ -19,12 +20,13 @@ const AuthorSection = ({
   twitter,
   youtube,
   facebook,
+  linkedin,
 }) => {
   return (
     <LayoutWrapper>
       <div>
         {author && site ? (
-          <a href={site} title={`Link to author's website`}>
+          <a href={site} title={`Link to ${author}'s website`}>
             {`Contributed by ${author}`} <ExternalLink className="icon" />
           </a>
         ) : (
@@ -34,7 +36,7 @@ const AuthorSection = ({
 
       {snapchat ? (
         <div>
-          <a href={snapchat} title={`Link to author's Snapchat`}>
+          <a href={snapchat} title={`Link to ${author}'s Snapchat`}>
             <SnapchatGhost className="icon" />
           </a>
         </div>
@@ -42,7 +44,7 @@ const AuthorSection = ({
 
       {instagram ? (
         <div>
-          <a href={instagram} title={`Link to author's Instagram`}>
+          <a href={instagram} title={`Link to ${author}'s Instagram`}>
             <Instagram className="icon" />
           </a>
         </div>
@@ -50,7 +52,7 @@ const AuthorSection = ({
 
       {facebook ? (
         <div>
-          <a href={facebook} title={`Link to author's Facebook`}>
+          <a href={facebook} title={`Link to ${author}'s Facebook`}>
             <FacebookF className="icon" />
           </a>
         </div>
@@ -58,7 +60,7 @@ const AuthorSection = ({
 
       {twitter ? (
         <div>
-          <a href={twitter} title={`Link to author's Twitter`}>
+          <a href={twitter} title={`Link to ${author}'s Twitter`}>
             <Twitter className="icon" />
           </a>
         </div>
@@ -66,8 +68,16 @@ const AuthorSection = ({
 
       {youtube ? (
         <div>
-          <a href={youtube} title={`Link to author's Youtube`}>
+          <a href={youtube} title={`Link to ${author}'s Youtube`}>
             <Youtube className="icon" />
+          </a>
+        </div>
+      ) : null}
+
+      {linkedin ? (
+        <div>
+          <a href={linkedin} title={`Link to ${author}'s LinkedIn`}>
+            <Linkedin className="icon" />
           </a>
         </div>
       ) : null}

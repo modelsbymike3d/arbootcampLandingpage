@@ -33,6 +33,7 @@ const LandingPage = ({ data }) => {
     twitter: pageData.contributor_twitter,
     youtube: pageData.contributor_youtube,
     facebook: pageData.contributor_facebook,
+    linkedin: pageData.contributor_linkedin
   }
 
   return (
@@ -99,6 +100,7 @@ export const pageQuery = graphql`
           contributor_twitter
           contributor_youtube
           contributor_facebook
+          contributor_linkedin
           description
           intro
           image

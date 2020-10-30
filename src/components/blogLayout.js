@@ -32,6 +32,7 @@ const BlogPage = ({ data }) => {
     twitter: frontmatter.contributor_twitter,
     youtube: frontmatter.contributor_youtube,
     facebook: frontmatter.contributor_facebook,
+    linkedin: frontmatter.contributor_linkedin,
   }
 
   return (
@@ -111,6 +112,7 @@ export const pageQuery = graphql`
         contributor_twitter
         contributor_youtube
         contributor_facebook
+        contributor_linkedin
         description
         image
         title

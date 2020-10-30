@@ -6,6 +6,7 @@ contributor_instagram: https://www.instagram.com/jonahcreative/
 contributor_twitter: https://www.twitter.com/jonahcreate/
 contributor_youtube: ""
 contributor_facebook: ""
+contributor_linkedin: "http://linkedin.com/in/jonah-cohn-8179b91ba"
 title: Interview With Julien van Dorland
 description: Julien van Dorland is a digital creator and entrepreneur who specializes in social augmented reality. He is an Official Lens Creator on Snapchat, which allows him to work with some of the world's biggest and most influential brands. Outside of his work with snapchat, Julien has created multiple business ventures in the digital and fashion marketplace.
 path: /blog/interview-with-julien-van-dorland
@@ -82,5 +83,6 @@ Connect with Jonah!
 - [Snapchat](https://www.snapchat.com/add/jonah-cohn)
 - [Instagram](https://www.instagram.com/jonahcreative/)
 - [Twitter](https://www.twitter.com/jonahcreate/)
+- [LinkedIn](http://linkedin.com/in/jonah-cohn-8179b91ba)
 
 > Minor edits were made to this interview for clarity
