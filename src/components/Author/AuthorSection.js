@@ -31,41 +31,46 @@ const AuthorSection = ({
           <div>{`Contributed by ${author}`}</div>
         )}
       </div>
-      <div>
-        {snapchat ? (
+
+      {snapchat ? (
+        <div>
           <a href={snapchat} title={`Link to author's Snapchat`}>
             <SnapchatGhost className="icon" />
           </a>
-        ) : null}
-      </div>
-      <div>
-        {instagram ? (
+        </div>
+      ) : null}
+
+      {instagram ? (
+        <div>
           <a href={instagram} title={`Link to author's Instagram`}>
             <Instagram className="icon" />
           </a>
-        ) : null}
-      </div>
-      <div>
-        {facebook ? (
+        </div>
+      ) : null}
+
+      {facebook ? (
+        <div>
           <a href={facebook} title={`Link to author's Facebook`}>
             <FacebookF className="icon" />
           </a>
-        ) : null}
-      </div>
-      <div>
-        {twitter ? (
+        </div>
+      ) : null}
+
+      {twitter ? (
+        <div>
           <a href={twitter} title={`Link to author's Twitter`}>
             <Twitter className="icon" />
           </a>
-        ) : null}
-      </div>
-      <div>
-        {youtube ? (
+        </div>
+      ) : null}
+
+      {youtube ? (
+        <div>
           <a href={youtube} title={`Link to author's Youtube`}>
             <Youtube className="icon" />
           </a>
-        ) : null}
-      </div>
+        </div>
+      ) : null}
     </LayoutWrapper>
   )
 }

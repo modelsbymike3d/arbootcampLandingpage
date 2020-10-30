@@ -79,7 +79,7 @@ const TextBlockWrapper = styled.section`
   }
 
   p {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-shadow: 0px 0px 5px rgba(8, 0, 8, 1);
     opacity: 0.85;
   }

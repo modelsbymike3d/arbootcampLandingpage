@@ -35,6 +35,13 @@ module.exports = {
         path: `${__dirname}/src/landing`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog-pages`,
+        path: `${__dirname}/src/blog`,
+      },
+    },
     "gatsby-plugin-sitemap",
     `gatsby-transformer-remark`,
     `gatsby-transformer-json`,

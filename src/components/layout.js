@@ -63,7 +63,7 @@ const LayoutWrapper = styled.div`
 
   li {
     text-align: left;
-    padding: 10px 0px;
+    padding: 5px 0px;
     line-height: 1.45;
   }
 
@@ -84,6 +84,13 @@ const LayoutWrapper = styled.div`
       font-size: 1.2rem;
       line-height: 1.4;
     }
+  }
+
+  .date-line {
+    font-style: italic;
+    font-size: 0.8rem;
+    padding-top: 5px;
+    text-align: left;
   }
 
   .content-container {

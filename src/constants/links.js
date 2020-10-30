@@ -11,4 +11,8 @@ export default [
     path: "/filters",
     text: "Filters",
   },
+  {
+    path: "/blog",
+    text: "Blog",
+  },
 ]

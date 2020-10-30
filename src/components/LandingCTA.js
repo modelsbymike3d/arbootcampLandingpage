@@ -1,6 +1,7 @@
 import React from "react"
 
 const LayoutCTA = ({ platform }) => {
+  if (!platform) platform = "General"
   return (
     <div className="content-container vertical-spacing italic">
       <p>
