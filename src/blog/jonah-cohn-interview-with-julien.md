@@ -6,18 +6,18 @@ contributor_instagram: https://www.instagram.com/jonahcreative/
 contributor_twitter: https://www.twitter.com/jonahcreate/
 contributor_youtube: ""
 contributor_facebook: ""
-title: Interview With Julien Van Dorland
-description: Julien Van Dorland is a digital creator and entrepreneur who specializes in social augmented reality. He is an Official Lens Creator at Snapchat, which allows him to work with some of the world's biggest and most influential brands. Outside of his work with snapchat, Julien has created multiple business ventures in the digital and fashion marketplace.
+title: Interview With Julien van Dorland
+description: Julien van Dorland is a digital creator and entrepreneur who specializes in social augmented reality. He is an Official Lens Creator at Snapchat, which allows him to work with some of the world's biggest and most influential brands. Outside of his work with snapchat, Julien has created multiple business ventures in the digital and fashion marketplace.
 path: /blog/interview-with-julien-van-dorland
 image: /blog/interview-with-julien-van-dorland.jpg
 date: "2020-10-30"
 ---
 
-Julien Van Dorland is a digital creator and entrepreneur who specializes in social augmented reality. He is an Official Lens Creator at Snapchat, which allows him to work with some of the world's biggest and most influential brands. Outside of his work with snapchat, Julien has created multiple business ventures in the digital and fashion marketplace.
+Julien van Dorland is a digital creator and entrepreneur who specializes in social augmented reality. He is an Official Lens Creator at Snapchat, which allows him to work with some of the world's biggest and most influential brands. Outside of his work with snapchat, Julien has created multiple business ventures in the digital and fashion marketplace.
 
 **_Jonah_**: Hello, Julien. Hello. If you could just give us a quick introduction of who you are.
 
-**_Julien_**: Oh, yes, my name is Julien Van Dorland. I'm from the Netherlands. I'm 20 years old. I work in the augmented reality space. And I currently work also with my software company creating a software involving Nike sneakers.
+**_Julien_**: Oh, yes, my name is Julien van Dorland. I'm from the Netherlands. I'm 20 years old. I work in the augmented reality space. And I currently work also with my software company creating a software involving Nike sneakers.
 
 **_Jonah_**: Awesome. So just to get started. How did you get into augmented reality?
 
