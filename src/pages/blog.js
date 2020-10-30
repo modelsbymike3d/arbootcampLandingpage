@@ -28,8 +28,6 @@ const canonicalUrl = `https://arbootcamp.com/blog`
 export default ({ data }) => {
   const pages = data.allMarkdownRemark.edges
 
-  console.log(pages)
-
   return (
     <>
       <Helmet>
@@ -52,17 +50,14 @@ export default ({ data }) => {
       </Helmet>
       <Layout>
         <TextBlock id="blog-list" title="Blog">
-
           <div className="vertical-spacing">
-              {pages.map((page, index) => {
-                  const entry = {
-                      description: page.node.excerpt,
-                      ...page.node.frontmatter
-                  };
-                  return (
-                      <BlogLink key={index} {...entry} />
-                  )
-              })}
+            {pages.map((page, index) => {
+              const entry = {
+                description: page.node.excerpt,
+                ...page.node.frontmatter,
+              }
+              return <BlogLink key={index} {...entry} />
+            })}
           </div>
 
           {/* <div className="vertical-spacing">
