@@ -10,44 +10,56 @@ const FilterBlock = props => {
       <div className="filter-card">
         <h2>{props.name}</h2>
 
-        <div className="filter-image-container">
-          <LazyLoad height={200} offset={100}>
-            <img
-              src={props.preview}
-              alt={`Preview of the ${props.name} filter`}
-            />
-          </LazyLoad>
-          <div>
-            <LazyLoad height={200} offset={100}>
+        <LazyLoad height={300} offset={100}>
+          <img
+            src={props.preview}
+            alt={`Preview of the ${props.name} filter`}
+            className="preview-img"
+          />
+        </LazyLoad>
+        <div className="tutorial-summary">
+          <p>{props.description}</p>
+        </div>
+        <div>
+          <LazyLoad height={150} offset={100}>
+            <a
+              href={props.filter_link}
+              title={`Link to the ${props.name} filter`}
+            >
+              <img
+                src={props.code_image}
+                alt={`Scannable code for the ${props.name} filter`}
+                className="snapcode-img"
+              />
+            </a>
+            <div className="text-center">
+              Scan or{" "}
               <a
                 href={props.filter_link}
                 title={`Link to the ${props.name} filter`}
               >
-                <img
-                  src={props.code_image}
-                  alt={`Scannable code for the ${props.name} filter`}
-                />
-              </a>
-              <div className="text-center">Scan or click to use!</div>
-            </LazyLoad>
-          </div>
+                click
+              </a>{" "}
+              to use!
+            </div>
+          </LazyLoad>
         </div>
-
-        <div className="tutorial-summary">
-          <p>{props.description}</p>
-          <p>
-            <a href={props.author_link}>
-              {`View more filters from ${props.author} `}
-              <GoLinkExternal />
-            </a>
-          </p>
-        </div>
+        <p>
+          <a href={props.author_link}>
+            {`View more filters from ${props.author} `}
+            <GoLinkExternal />
+          </a>
+        </p>
       </div>
     </LayoutWrapper>
   )
 }
 
 const LayoutWrapper = styled.div`
+  h2 {
+    text-align: center;
+  }
+
   h3 {
     font-size: 1rem;
     text-align: left;
@@ -59,20 +71,27 @@ const LayoutWrapper = styled.div`
     margin-bottom: 5px;
   }
 
-  .filter-image-container {
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  .lazyload-wrapper {
+    text-align: center;
   }
 
   .text-center {
     text-align: center;
   }
 
+  .snapcode-img {
+    height: 100px;
+    width: auto;
+    margin: auto;
+
+    @media (min-width: 768px) {
+      height: 150px;
+      width: auto;
+    }
+  }
+
   img {
-    height: 200px;
+    height: 300px;
     width: auto;
     margin: auto;
 
