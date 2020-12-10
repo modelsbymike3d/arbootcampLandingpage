@@ -43,7 +43,21 @@ module.exports = {
       },
     },
     "gatsby-plugin-sitemap",
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-youtube-link`,
+            options: {
+              width: 512,
+              className: `youtube-thumbnail`,
+              title: `Click to watch video on youtube.com`,
+            },
+          },
+        ],
+      },
+    },
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-plugin-styled-components`,

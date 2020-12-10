@@ -15,21 +15,15 @@ If you've ever used Instagram, I'm sure you're familiar with filters. Filters ar
 
 If you are a photographer, you probably have at least a few Lightroom presets. It is pretty easy to take your presets, turn them into LUTs, and then use those LUTs within Spark AR. This tutorial by Till walks you through the whole process, from exporting the LUT to importing into Spark AR and finally submitting your finished effect.
 
-<div class="iframe-container">
-<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/ltLyDMl3FKo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+`youtube:ltLyDMl3FKo`
 
 For some pre-made LUTs, take a look at this tutorial by Josh Beckwith. He's graciously [provided several pre-made LUTs](https://github.com/positlabs/spark-lut-patch) that you can download and use in your own filters. As he demonstrates in the video, you can use LUTs to not only create some nice aesthetic effects, but also some pretty zany effects too.
 
-<div class="iframe-container">
-<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/lxF-ecbkbr4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+`youtube:lxF-ecbkbr4`
 
 Now, using a LUT doesn't guarantee you'll get good results, so watch the following video for some more tips and tricks to get a good looking result.
 
-<div class="iframe-container">
-<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/9xM1rbc4y-E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+`youtube:9xM1rbc4y-E`
 
 ## Doing it manually
 

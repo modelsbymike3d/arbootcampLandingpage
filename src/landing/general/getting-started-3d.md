@@ -21,9 +21,7 @@ While I personally like Blender, it isn't your only option. There are several pa
 
 Once you have the software, you need to learn it! If you are just getting started in Blender, I recommend the [donut tutorial by Blender Guru](https://www.youtube.com/playlist?list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U). If you aren't using Blender, just find a course or playlist applicable to your software of choice.
 
-<div class="iframe-container">
-<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/NyJWoyVx_XI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+`youtube:NyJWoyVx_XI`
 
 Some topics that I recommend learning are:
 

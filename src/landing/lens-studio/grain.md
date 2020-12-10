@@ -13,15 +13,11 @@ The most popular way of making grain in Lens Studio is probably by overlaying an
 
 Adding an image overlay is a pretty straightforward way of adding grain to your lenses. The hardest part might be finding grain images, but fortunately resources like [Film Composite](https://www.filmcomposite.com/free-film-assets) exist with some free images of film grain. Watch the video below or [read the tutorial here](https://learn.arbootcamp.com/snapchat-beginner/grain).
 
-<div class="iframe-container">
-<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/q3PtpCixl5k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+`youtube:q3PtpCixl5k`
 
 Natalie's tutorial also goes through all the steps of finding and adding a grain image, but I do want to interject and say that when you are searching for a grain image on Google, be sure you [filter by usage rights](https://support.google.com/websearch/answer/29508?co=GENIE.Platform%3DDesktop&hl=en&oco=0) to make sure you aren't violating any copyright. Google Images is a search engine after all, not a direct source of images.
 
-<div class="iframe-container">
-<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/TABYa8KUDQU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+`youtube:TABYa8KUDQU`
 
 If you don't want static grain, you can follow the same steps as for using an image overlay, but just swap out the image for a GIF, a video, or an image sequence of the grain.
 
@@ -35,17 +31,13 @@ You can also create grain using the [Material Editor](https://lensstudio.snapcha
 
 Ryan's tutorial is probably the easiest way to add grain using the material editor. It is simple yet effective.
 
-<div class="iframe-container">
-<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/sI1M6c-dGbo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+`youtube:sI1M6c-dGbo`
 
 Max van Leeuwen is an extremely talented Official Lens Creator who created a customizable grain material that you can [simply download](https://maxvanleeuwen.com/downloads/#lsgraingenerator) and start playing with inside of Lens Studio.
 
 The Lens Studio team themselves also created a tutorial for adding some stylized grain. It's long, but their tutorial streams are always packed with information and tips you can apply to other lenses.
 
-<div class="iframe-container">
-<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/ETqt3h0vbTk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+`youtube:ETqt3h0vbTk`
 
 ## Bonus - the Analog TV effect
 

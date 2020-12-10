@@ -31,14 +31,10 @@ Now that you have multiple frames of grain, all that's left is importing them as
 
 For Lens Studio you can follow the below tutorial, but instead of just importing an image, make sure you [import your frames as an image sequence](https://lensstudio.snapchat.com/guides/2d/2d-animation/) and use that for the grain texture.
 
-<div class="iframe-container">
-<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/TABYa8KUDQU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+`youtube:TABYa8KUDQU`
 
 #### Importing into Spark AR
 
 The following video goes over how to import grain into Spark AR.
 
-<div class="iframe-container">
-<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/JzY7G6zNbRE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+`youtube:JzY7G6zNbRE`

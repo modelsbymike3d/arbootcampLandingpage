@@ -15,9 +15,7 @@ Color corrections are everywhere on Snapchat. A color correction can be thought 
 
 The easiest way to add a color correction is to use one of [Lens Studio's built-in LUTs](https://lensstudio.snapchat.com/guides/2d/post-effect/). It's simply a matter of choosing one from the list and adjusting the strength of the effect. If you are looking for a quick way to add some color adjustments to your lens, this is a great approach. The wide selection of LUTs means you can create some pretty great effects without ever leaving Lens Studio. Take a look at Emily's tutorial on how to do so.
 
-<div class="iframe-container">
-<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/y43ZeZUOPow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+`youtube:y43ZeZUOPow`
 
 ## Making your own LUT
 
@@ -25,18 +23,12 @@ If you are wanting to create your own color correction, Lens Studio provides a b
 
 Creating your own LUT can be as simple as applying a VSCO filter. Once again we have Emily here to walk us through the process.
 
-<div class="iframe-container">
-<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/QrcrKtCvONc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+`youtube:QrcrKtCvONc`
 
 If you are coming from a photography background, you can use Lightroom to create your LUTs as demonstrated here by Natalie.
 
-<div class="iframe-container">
-<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/ctJRdIHIFok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+`youtube:ctJRdIHIFok`
 
 And if Photoshop is your jam, Mario can help walk you through the process.
 
-<div class="iframe-container">
-<iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/4qCB60p9ALo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+`youtube:4qCB60p9ALo`
