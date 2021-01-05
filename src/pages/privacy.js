@@ -26,7 +26,7 @@ export default () => (
     <Layout>
       <TextBlock id="privacy" title="Privacy Policy">
         <p>
-          {`We don't really have a privacy policy because we don't track you all that much. We do use `}<a href="https://plausible.io">Plausible Analytics</a>{` for website analytics, but it is cookie-free and privacy focused so we only collect basic usage statistics.`}</p>
+          {`We don't really have a privacy policy because we don't track you all that much. We do use `}<a href="https://plausible.io">Plausible</a>{` for website analytics, but it is cookie-free and privacy focused so we only collect basic usage statistics.`}</p>
       </TextBlock>
     </Layout>
   </>
