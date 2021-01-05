@@ -1,10 +1,18 @@
 import React from "react"
 import styled from "styled-components"
 import socialIcons from "../../constants/social-icons"
+import { Link } from "gatsby"
 
 const Footer = () => {
   return (
     <FooterWrapper>
+      <div className="credit">
+        <Link
+          to="/privacy"
+        >
+          Privacy Policy
+        </Link>
+      </div>
       <div className="credit">
         Site created by{" "}
         <a
