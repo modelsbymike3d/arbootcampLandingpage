@@ -80,7 +80,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: node.frontmatter.path + '/',
+      path: node.frontmatter.path,
       component: landingPageTemplate,
       context: {}, // additional data can be passed via context
     })
@@ -88,7 +88,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   blogList.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: node.frontmatter.path + '/',
+      path: node.frontmatter.path,
       component: blogPageTemplate,
       context: {}, // additional data can be passed via context
     })
@@ -96,7 +96,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   filtersList.data.allFiltersJson.edges.forEach(({ node }) => {
     createPage({
-      path: node.path + '/',
+      path: node.path,
       component: filtersPageTemplate,
       context: {},
     })
