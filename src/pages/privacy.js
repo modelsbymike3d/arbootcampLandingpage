@@ -17,11 +17,15 @@ import { IconContext } from "react-icons"
 import { MdDone, MdClear } from "react-icons/md"
 import { Helmet } from "react-helmet"
 
+const description = 'Our privacy policy';
+
 export default () => (
   <>
     <Helmet>
       <title>AR Bootcamp | Privacy Policy</title>
       <link rel="icon" type="image/png" href="favicon.png" sizes="512x512" />
+      <meta name="description" content={description} />
+      <meta property="og:description" content={description} />
     </Helmet>
     <Layout>
       <TextBlock id="privacy" title="Privacy Policy">

@@ -9,6 +9,11 @@ import Footer from "../components/Footer/footer"
 const Layout = ({ children }) => {
   return (
     <LayoutWrapper>
+      <Helmet
+        htmlAttributes={{
+          lang: 'en',
+        }}
+      />
       <Navbar />
       <div className="layout">{children}</div>
       <Footer />
