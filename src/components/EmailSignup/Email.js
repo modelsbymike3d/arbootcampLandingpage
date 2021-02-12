@@ -11,8 +11,11 @@ const EmailSignup = () => {
   const submitForm = event => {
     event.preventDefault()
     const data = new FormData(event.target)
+    const headers = {
+      'Content-Type': 'application/json'
+    }
     axios
-      .post(".netlify/functions/subscribe", data)
+      .post(".netlify/functions/subscribe", data, headers)
       .then(res => {
         console.log(res)
         if (res.statusCode === 200) {
