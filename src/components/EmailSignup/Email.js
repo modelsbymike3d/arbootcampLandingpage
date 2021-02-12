@@ -1,135 +1,84 @@
-import React from "react"
+import React, { useEffect } from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+const axios = require("axios").default
 
 const EmailSignup = () => {
+  useEffect(() => {
+    document.getElementById("honey").style.display = "none"
+  })
+
+  const submitForm = event => {
+    event.preventDefault()
+    const data = new FormData(event.target)
+    axios
+      .post("/subscribe", data)
+      .then(res => {
+        console.log(res)
+        if (res.statusCode === 200) {
+          alert(
+            "Success! Keep an eye out for a confirmation email. You might need to check your Promotions section or spam folder."
+          )
+        } else {
+          alert("Uh oh, something went wrong :(")
+        }
+      })
+      .catch(err => {
+        console.log(err)
+        alert("Unable to subscribe right now :(")
+      })
+  }
+
   return (
     <EmailWrapper>
-      <div className="email-signup">
-        <div
-          id="mlb2-3520462"
-          className="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-3520462"
-        >
-          <div className="ml-form-align-center">
-            <div className="ml-form-embedWrapper embedForm">
-              <div className="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
-                <div className="ml-form-embedContent">
-                  <h4>Stay in the loop</h4>
-                  <p></p>
-                  <p className="text-left">
-                    Do you like building Snapchat lenses and Instagram filters?
-                    Sign up for my newsletter! What's included?
-                  </p>
-                  <ul>
-                    <li>Filter trends</li>
-                    <li>Cool filters from the community</li>
-                    <li>Tips and tricks</li>
-                    <li>Tutorials</li>
-                  </ul>
-                  <p className="text-left">
-                    I promise not to spam with you with things like "shoutout
-                    for shoutout" requests. At most I'll send something out
-                    weekly, but it'll probably be closer to one or two times a
-                    month.
-                  </p>
-                  <p></p>
-                </div>
-                <form
-                  className="ml-block-form"
-                  action="https://static.mailerlite.com/webforms/submit/q3a2q6"
-                  data-code="q3a2q6"
-                  method="post"
-                  target="_blank"
-                >
-                  <div className="ml-form-formContent horozintalForm">
-                    <div className="ml-form-horizontalRow">
-                      <div className="ml-input-horizontal">
-                        <div
-                          style={{ width: "100%" }}
-                          className="horizontal-fields"
-                        >
-                          <div className="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-                            <input
-                              type="email"
-                              className="form-control form-input"
-                              data-inputmask=""
-                              name="fields[email]"
-                              placeholder="Email"
-                              autoComplete="email"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="ml-button-horizontal primary">
-                        <button type="submit" className="submit-button">
-                          Subscribe
-                        </button>
-                        <button
-                          disabled="disabled"
-                          style={{ display: "none" }}
-                          type="button"
-                          className="loading"
-                        >
-                          {" "}
-                          <div className="ml-form-embedSubmitLoad"></div>{" "}
-                          <span className="sr-only">Loading...</span>{" "}
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="ml-form-embedPermissions">
-                    <div className="ml-form-embedPermissionsContent horizontal privacy-policy">
-                      <p>
-                        You can unsubscribe anytime. For more details, review
-                        our{" "}
-                        <a href="https://arbootcamp.com/privacy">
-                          Privacy Policy
-                        </a>
-                        .
-                      </p>
-                    </div>
-                  </div>
-                  <input type="hidden" name="ml-submit" value="1" />
-                  <div
-                    className="ml-mobileButton-horizontal"
-                    style={{ display: "none" }}
-                  >
-                    <button type="submit" className="submit-button">
-                      Subscribe
-                    </button>
-                    <button
-                      disabled="disabled"
-                      style={{ display: "none" }}
-                      type="button"
-                      className="loading"
-                    >
-                      {" "}
-                      <div className="ml-form-embedSubmitLoad"></div>{" "}
-                      <span className="sr-only">Loading...</span>{" "}
-                    </button>
-                  </div>
-                </form>
-              </div>
-              <div
-                className="ml-form-successBody row-success"
-                style={{ display: "none" }}
-              >
-                <div className="ml-form-successContent">
-                  <h4>Thank you!</h4>
-                  <p>You have successfully joined our subscriber list.</p>
-                </div>
-              </div>
-            </div>
+      <div classname="email-signup">
+        <h2>Stay in the loop</h2>
+        <p></p>
+        <p className="text-left">
+          Do you like building Snapchat lenses and Instagram filters? Sign up
+          for my newsletter! What's included?
+        </p>
+        <ul>
+          <li>Filter trends</li>
+          <li>Cool filters from the community</li>
+          <li>Tips and tricks</li>
+          <li>Tutorials</li>
+        </ul>
+        <p className="text-left">
+          I promise not to spam with you with things like "shoutout for
+          shoutout" requests. At most I'll send something out weekly, but it'll
+          probably be closer to one or two times a month.
+        </p>
+        <p></p>
+      </div>
+      <form className="email-signup" onSubmit={submitForm}>
+        <input
+          type="email"
+          className="form-control form-input"
+          data-inputmask=""
+          name="fields[email]"
+          placeholder="Email"
+          autoComplete="email"
+          aria-label="Email address"
+        />
+
+        <input autoComplete="off" type="text" id="honey" name="honey" />
+
+        <div className="ml-button-horizontal primary">
+          <button type="submit" className="submit-button">
+            Subscribe
+          </button>
+        </div>
+
+        <div className="ml-form-embedPermissions">
+          <div className="ml-form-embedPermissionsContent horizontal privacy-policy">
+            <p>
+              You can unsubscribe anytime. For more details, review our{" "}
+              <a href="https://arbootcamp.com/privacy">Privacy Policy</a>.
+            </p>
           </div>
         </div>
-        <script>
-          {`function ml_webform_success_3520462(){var r=ml_jQuery||jQuery;r(".ml-subscribe-form-3520462 .row-success").show(),r(".ml-subscribe-form-3520462 .row-form").hide()}`}
-        </script>
-        <script
-          src="https://static.mailerlite.com/js/w/webforms.min.js?v52c1aad546f96d894e3716ba78e7fa42"
-          type="text/javascript"
-        ></script>
-      </div>
+      </form>
     </EmailWrapper>
   )
 }
@@ -142,6 +91,7 @@ const EmailWrapper = styled.footer`
   .email-signup {
     margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     font-size: 1rem;
 
