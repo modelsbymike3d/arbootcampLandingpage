@@ -12,7 +12,7 @@ const EmailSignup = () => {
     event.preventDefault()
     const data = new FormData(event.target)
     axios
-      .post("/subscribe", data)
+      .post(".netlify/functions/subscribe", data)
       .then(res => {
         console.log(res)
         if (res.statusCode === 200) {
