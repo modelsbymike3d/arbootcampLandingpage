@@ -19,7 +19,7 @@ const EmailSignup = () => {
       .post(".netlify/functions/subscribe", payload, headers)
       .then(res => {
         console.log(res)
-        if (res.statusCode === 200) {
+        if (res.status === 200) {
           alert(
             "Success! Keep an eye out for a confirmation email. You might need to check your Promotions section or spam folder."
           )
@@ -35,7 +35,7 @@ const EmailSignup = () => {
 
   return (
     <EmailWrapper>
-      <div classname="email-signup">
+      <div className="email-signup">
         <h2>Stay in the loop</h2>
         <p></p>
         <p className="text-left">

@@ -1,7 +1,6 @@
 const axios = require("axios").default
 
 exports.handler = async function(event, context) {
-  console.log(event.body)
   const { email, honey } = JSON.parse(event.body)
 
   if (honey !== "") {
@@ -17,9 +16,12 @@ exports.handler = async function(event, context) {
     email_address: email,
   }
 
+  console.log(url)
+  console.log(payload)
   axios
     .post(url, payload)
     .then(res => {
+      console.log(res)
       return {
         statusCode: 200,
         body: JSON.stringify({ message: "Success" }),
