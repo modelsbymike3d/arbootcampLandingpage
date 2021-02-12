@@ -1,12 +1,13 @@
 const axios = require("axios").default
 
 exports.handler = async function(event, context) {
+  console.log(event.body)
   const { email, honey } = JSON.parse(event.body)
 
   if (honey !== "") {
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: "Bot submission", type: 'BOT' }),
+      body: JSON.stringify({ message: "Bot submission", type: "BOT" }),
     }
   }
 
