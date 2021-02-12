@@ -7,7 +7,7 @@ import Email from "../EmailSignup/Email"
 const Footer = () => {
   return (
     <FooterWrapper>
-      <Email />
+      {/* <Email /> */}
       <div className="credit">
         <Link to="/privacy">Privacy Policy</Link>
       </div>
