@@ -11,11 +11,12 @@ const EmailSignup = () => {
   const submitForm = event => {
     event.preventDefault()
     const data = new FormData(event.target)
+    const payload = Object.fromEntries(data.entries())
     const headers = {
-      'Content-Type': 'application/json'
+      "Content-Type": "application/json",
     }
     axios
-      .post(".netlify/functions/subscribe", data, headers)
+      .post(".netlify/functions/subscribe", payload, headers)
       .then(res => {
         console.log(res)
         if (res.statusCode === 200) {
@@ -59,7 +60,7 @@ const EmailSignup = () => {
           type="email"
           className="form-control form-input"
           data-inputmask=""
-          name="fields[email]"
+          name="email"
           placeholder="Email"
           autoComplete="email"
           aria-label="Email address"
