@@ -18,19 +18,18 @@ exports.handler = async function(event, context) {
 
   console.log(url)
   console.log(payload)
-  axios
-    .post(url, payload)
-    .then(res => {
-      console.log(res)
-      return {
-        statusCode: 200,
-        body: JSON.stringify({ message: "Success" }),
-      }
-    })
-    .catch(err => {
-      return {
-        statusCode: 400,
-        body: JSON.stringify({ message: "failed", err }),
-      }
-    })
+
+  try {
+    const resp = await axios.post(url, payload)
+    console.log(resp.data)
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ message: "Success" }),
+    }
+  } catch (err) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({ message: "failed", err }),
+    }
+  }
 }
