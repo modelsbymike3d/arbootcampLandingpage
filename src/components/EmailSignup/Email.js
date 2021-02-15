@@ -21,7 +21,7 @@ const EmailSignup = () => {
         console.log(res)
         if (res.status === 200) {
           alert(
-            "Success! Keep an eye out for a confirmation email. You might need to check your Promotions section or spam folder."
+            "Success! Keep an eye out for a confirmation email. You might need to check your Promotions or spam folder."
           )
         } else {
           alert("Uh oh, something went wrong :(")
