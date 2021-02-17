@@ -19,10 +19,10 @@ import { IconContext, GoLinkExternal } from "react-icons"
 import { MdDone, MdClear } from "react-icons/md"
 import { Helmet } from "react-helmet"
 
-const title = `AR Bootcamp | Tutorials`
+const title = `AR Bootcamp | Guides`
 const description = `Looking for Lens Studio or Spark AR tutorials? Look no further.`
 const imageUrl = `https://arbootcamp.com/mainImage.jpg`
-const canonicalUrl = `https://arbootcamp.com/tutorials`
+const canonicalUrl = `https://arbootcamp.com/guides`
 
 export default ({ data }) => {
   const pages = data.allMarkdownRemark.edges

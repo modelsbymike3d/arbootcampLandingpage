@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 const Banner = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "lightBokeh.jpg" }) {
+      file(relativePath: { eq: "flames.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 2000, quality: 90) {
             ...GatsbyImageSharpFluid_withWebp
@@ -38,7 +38,7 @@ const Banner = () => {
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1 }}
           >
-            <span>Learn Augmented Reality</span>
+            <span>Learn how to create incredible augmented reality effects for Snapchat, Instagram, and Facebook</span>
           </motion.h1>
           <motion.p
             initial="hidden"
@@ -46,7 +46,7 @@ const Banner = () => {
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1.5 }}
           >
-            We make it easy
+            
           </motion.p>
           <Button
             cta="Start Learning"

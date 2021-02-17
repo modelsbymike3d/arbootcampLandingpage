@@ -7,9 +7,11 @@ const BlogLink = props => {
   return (
     <LayoutWrapper>
       <div className="blog-card">
-        <LazyLoad height={150} offset={100}>
-          <img src={props.image} alt={props.title} />
-        </LazyLoad>
+        { props.image &&
+          <LazyLoad height={150} offset={100}>
+            <img src={props.image} alt={props.title} />
+          </LazyLoad>
+        }
         <div className="blog-summary">
           <Link to={props.path}>
             <h3>{props.title}</h3>

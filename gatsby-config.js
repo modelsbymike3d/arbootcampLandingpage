@@ -10,6 +10,7 @@ module.exports = {
   siteMetadata: {
     title: "AR Bootcamp",
     author: "Michael Porter",
+    description: "The best place to learn how to create augmented reality experiences for Snapchat, Instagram, and Facebook",
     image: "/favicon.png",
     siteUrl: "https://arbootcamp.com",
   },
@@ -40,6 +41,13 @@ module.exports = {
       options: {
         name: `blog-pages`,
         path: `${__dirname}/src/blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `newsletter`,
+        path: `${__dirname}/src/newsletter`,
       },
     },
     "gatsby-plugin-sitemap",
@@ -74,5 +82,58 @@ module.exports = {
         domain: `arbootcamp.com`,
       },
     },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  guid: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  custom_elements: [{ "content:encoded": edge.node.html }],
+                })
+              })
+            },
+            query: `
+            {
+              allMarkdownRemark(
+                filter: { fileAbsolutePath: { glob: "**/src/newsletter/**/*.md" } }
+                sort: { fields: [frontmatter___date], order: DESC }
+              ) {
+                edges {
+                  node {
+                    excerpt(pruneLength: 280)
+                    frontmatter {
+                      title
+                      path
+                      date
+                    }
+                  }
+                }
+              }
+            }
+            `,
+            output: "/newsletter.xml",
+            title: "AR Bootcamp Newsletter RSS Feed",
+          },
+        ],
+      },
+    }
   ],
 }

@@ -1,12 +1,15 @@
 const path = require(`path`)
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
+
+  createRedirect({ fromPath: '/tutorials', toPath: '/guides', isPermanent: true, force: true })
 
   const landingPageTemplate = path.resolve(
     `src/components/landingPageLayout.js`
   )
   const blogPageTemplate = path.resolve(`src/components/blogLayout.js`)
+  const newsletterTemplate = path.resolve(`src/components/newsletterLayout.js`)
   const filtersPageTemplate = path.resolve(
     "src/components/filtersPageLayout.js"
   )
@@ -58,6 +61,23 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
 
+  const newsletterList = await graphql(`
+    query {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { glob: "**/src/newsletter/**/*.md" } }
+      ) {
+        edges {
+          node {
+            id
+            frontmatter {
+              path
+            }
+          }
+        }
+      }
+    }
+  `)
+
   // Handle errors
   if (result.errors) {
     reporter.panicOnBuild(
@@ -75,6 +95,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(
       `Error while running GraphQL query for filters pages.`
     )
+    return
+  }
+
+  if (newsletterList.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query for newsletter pages.`)
     return
   }
 
@@ -100,5 +125,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       component: filtersPageTemplate,
       context: {},
     })
+  })
+
+  newsletterList.data.allMarkdownRemark.edges.forEach(({ node}) => {
+    createPage({
+      path: node.frontmatter.path,
+      component: newsletterTemplate,
+      context: {}, // additional data can be passed via context
+    })  
   })
 }

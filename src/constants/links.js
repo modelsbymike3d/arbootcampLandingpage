@@ -1,11 +1,11 @@
 export default [
   {
     path: "https://learn.arbootcamp.com",
-    text: "Bootcamp",
+    text: "Tutorials",
   },
   {
-    path: "/tutorials",
-    text: "Tutorials",
+    path: "/guides",
+    text: "Guides",
   },
   {
     path: "/filters",
@@ -15,4 +15,8 @@ export default [
     path: "/blog",
     text: "Blog",
   },
+  {
+    path: "/newsletter",
+    text: "Newsletter"
+  }
 ]

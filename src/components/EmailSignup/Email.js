@@ -35,7 +35,7 @@ const EmailSignup = () => {
 
   return (
     <EmailWrapper>
-      <div className="email-signup">
+      <div id="email-signup-form" className="email-signup">
         <h2>Stay in the loop</h2>
         <p></p>
         <p className="text-left">
