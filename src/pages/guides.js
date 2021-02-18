@@ -20,7 +20,7 @@ import { MdDone, MdClear } from "react-icons/md"
 import { Helmet } from "react-helmet"
 
 const title = `AR Bootcamp | Guides`
-const description = `Looking for Lens Studio or Spark AR tutorials? Look no further.`
+const description = `With so much great information scattered across the web, it can be difficult to find what you are looking for. That's why we are putting together guides covering all aspects of social AR to help you quickly find the information you need.`
 const imageUrl = `https://arbootcamp.com/mainImage.jpg`
 const canonicalUrl = `https://arbootcamp.com/guides`
 

@@ -23,7 +23,7 @@ import { MdDone, MdClear } from "react-icons/md"
 import { Helmet } from "react-helmet"
 
 const title = `AR Bootcamp | Newsletter`
-const description = `Looking for Lens Studio or Spark AR tutorials? Look no further.`
+const description = `Stay up-to-date with augmented reality on Snapchat, Instagram, and Facebook! The AR Bootcamp newsletter is brought to you by me, Mike (aka modelsbymike3d), and I'll be sharing my tips, tricks, thoughts, and ramblings on social AR. Whether you are looking to get started with AR filters, are a seasoned professional, or you have no idea what I'm talking about, this newsletter is for you!`
 const imageUrl = `https://arbootcamp.com/mainImage.jpg`
 const canonicalUrl = `https://arbootcamp.com/newsletter`
 
@@ -51,13 +51,14 @@ export default ({ data }) => {
         <link rel="icon" type="image/png" href="/favicon.png" sizes="512x512" />
       </Helmet>
       <Layout>
-        <TextBlock id="blog-list" title="Newsletter Archive">
+        <TextBlock id="blog-list" title="Newsletter Archive" paragraph={description}>
           <div className="vertical-spacing">
-              <ButtonWrapper className="anchor" as="a" href="#email-signup-form">Signup today!</ButtonWrapper>
+            
+              <Button anchor={true} href="#email-signup-form" cta="Signup today!" />
               
               <div className="vertical-spacing">
                 { pages.length === 0 && 
-                    <div>Coming soon!</div>
+                    <div>Issues coming soon!</div>
                 }
                 {pages.map((page, index) => {
                 const entry = {
@@ -106,61 +107,6 @@ export const pageQuery = graphql`
           }
         }
       }
-    }
-  }
-`
-
-const ButtonWrapper = styled.button`
-  position: relative;
-  display: inline-block;
-  padding: 0 20px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  color: #fff;
-  font-size: 0.85rem;
-  letter-spacing: 0.25rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  box-sizing: border-box;
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-  background-size: 400%;
-  border-radius: 30px;
-  border: none;
-  z-index: 1;
-
-  &:hover {
-    cursor: pointer;
-    animation: animate 8s linear infinite;
-
-    &::before {
-      filter: blur(20px);
-      opacity: 1;
-      animation: animate 8s linear;
-    }
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    z-index: -1;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-    background-size: 400%;
-    border-radius: 40px;
-    opacity: 0;
-    transition: 0.5s;
-  }
-
-  @keyframes animate {
-    0% {
-      background-position: 0%;
-    }
-    100% {
-      background-position: 400%;
     }
   }
 `

@@ -18,7 +18,7 @@ import { MdDone, MdClear } from "react-icons/md"
 import { Helmet } from "react-helmet"
 
 const title = `AR Bootcamp`
-const description = `The best way to learn augmented reality!`
+const description = `AR Bootcamp is the number one way to learn augmented reality for Snapchat, Instagram, and Facebook. We provide tutorials, guides, and more to help you on your journey to become a pro AR creator.`
 const imageUrl = `https://arbootcamp.com/mainImage.jpg`
 const canonicalUrl = `https://arbootcamp.com`
 

@@ -17,7 +17,7 @@ const relatedData = require("../landing/related.json")
 
 const BlogPage = ({ data }) => {
   const { markdownRemark, site } = data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter, html, excerpt } = markdownRemark
 
   const canonicalUrl = site.siteMetadata.siteUrl + frontmatter.path
   const imageUrl = frontmatter.image
@@ -35,6 +35,8 @@ const BlogPage = ({ data }) => {
     linkedin: frontmatter.contributor_linkedin,
   }
 
+  const desc = frontmatter.description || excerpt;
+
   return (
     <>
       <Helmet>
@@ -43,11 +45,11 @@ const BlogPage = ({ data }) => {
         <meta name="title" content={frontmatter.title} />
         <meta property="og:title" content={frontmatter.title} />
         <meta property="twitter:title" content={frontmatter.title} />
-        <meta name="description" content={frontmatter.description} />
-        <meta property="og:description" content={frontmatter.description} />
+        <meta name="description" content={desc} />
+        <meta property="og:description" content={desc} />
         <meta
           property="twitter:description"
-          content={frontmatter.description}
+          content={desc}
         />
         <meta property="og:image" content={imageUrl} />
         <meta property="twitter:image" content={imageUrl} />
@@ -104,6 +106,7 @@ export const pageQuery = graphql`
     }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
+      excerpt(pruneLength: 280)
       frontmatter {
         contributor
         contributor_site

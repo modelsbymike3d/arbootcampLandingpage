@@ -21,7 +21,7 @@ import { MdDone, MdClear } from "react-icons/md"
 import { Helmet } from "react-helmet"
 
 const title = `AR Bootcamp | Blog`
-const description = `Looking for Lens Studio or Spark AR tutorials? Look no further.`
+const description = `Welcome to the blog! Here we'll cover various aspects of creating social AR.`
 const imageUrl = `https://arbootcamp.com/mainImage.jpg`
 const canonicalUrl = `https://arbootcamp.com/blog`
 
