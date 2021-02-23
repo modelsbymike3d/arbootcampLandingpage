@@ -30,10 +30,7 @@ const NewsletterPage = ({ data }) => {
         <meta property="twitter:title" content={frontmatter.title} />
         <meta name="description" content={frontmatter.excerpt} />
         <meta property="og:description" content={frontmatter.excerpt} />
-        <meta
-          property="twitter:description"
-          content={frontmatter.excerpt}
-        />
+        <meta property="twitter:description" content={frontmatter.excerpt} />
         <meta property="og:image" content={imageUrl} />
         <meta property="twitter:image" content={imageUrl} />
         <meta property="og:image:alt" content={frontmatter.title} />
@@ -62,7 +59,7 @@ const NewsletterPage = ({ data }) => {
             />
           ) : null}
           <div
-            className="content-container text-left"
+            className="content-container text-left newsletter-container"
             dangerouslySetInnerHTML={{ __html: html }}
           ></div>
 

@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
     <LayoutWrapper>
       <Helmet
         htmlAttributes={{
-          lang: 'en',
+          lang: "en",
         }}
       />
       <Navbar />
@@ -89,6 +89,11 @@ const LayoutWrapper = styled.div`
       font-size: 1.2rem;
       line-height: 1.4;
     }
+  }
+
+  .newsletter-container img {
+    width: 80%;
+    max-width: 800px;
   }
 
   .youtube-thumbnail {
