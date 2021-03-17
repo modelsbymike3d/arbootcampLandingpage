@@ -92,7 +92,7 @@ const LayoutWrapper = styled.div`
   }
 
   .newsletter-container img {
-    width: 80%;
+    width: auto;
     max-width: 800px;
   }
 
