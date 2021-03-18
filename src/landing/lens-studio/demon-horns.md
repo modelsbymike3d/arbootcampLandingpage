@@ -7,7 +7,7 @@ platform: Snapchat
 software: Lens Studio
 ---
 
-Have you noticed demon horn lenses starting to take over the Trending section lately in Snapchat? Find out how easy it is to create your own demon horn lens!
+Have you noticed [demon horn lenses](https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=6eee37c41cca422ba217d1fb39fefe56&metadata=01) starting to take over the Trending section lately in Snapchat? Find out how easy it is to create your own demon horn lens!
 
 ## The 3 minute version
 
