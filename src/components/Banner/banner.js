@@ -32,17 +32,14 @@ const Banner = () => {
         fluid={data.file.childImageSharp.fluid}
       >
         <div className="hero-content">
-          <h1>
-            Learn how to create incredible augmented reality effects for
-            Snapchat, Instagram, and Facebook
-          </h1>
+          <h1>You can be an AR creator</h1>
           <motion.p
             initial="hidden"
             animate="visible"
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1.5 }}
           >
-            Take your lenses and filters to the next level!
+            Learn how to create incredible augmented reality experiences.
           </motion.p>
           <Button
             cta="Start Learning"
